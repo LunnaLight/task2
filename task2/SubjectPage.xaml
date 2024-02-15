@@ -1,0 +1,22 @@
+﻿<Page x:Class="task2.SubjectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:task2"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1500"
+      Title="SubjectPage">
+
+    <Grid Background="#FFD0D7F3">
+        <Border Padding="10">
+            <StackPanel>
+                <Label Content="Список предметов" FontFamily="Franklin Gothic Demi" FontSize="50" Foreground="#FF535978" Margin="0,16,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ScrollViewer Height="520" Margin="0,15,0,0">
+                    <DataGrid x:Name="DataGrid" AutoGenerateColumns="True"></DataGrid>
+                </ScrollViewer>
+                <Button x:Name="BackButton" Content="Назад" FontFamily="Franklin Gothic Demi" FontSize="45" Foreground="#FF2E3A79" Background="#FFB2C1FF" BorderThickness="4" BorderBrush="#FF2E3A79" Margin="0,35,0,0" Cursor="Hand" Click="BackButton_Click" Padding="15" Width="320"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

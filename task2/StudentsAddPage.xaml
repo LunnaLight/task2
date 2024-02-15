@@ -1,0 +1,29 @@
+﻿<Page x:Class="task2.StudentsAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:task2"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1500"
+      Title="StudentsAddPage">
+
+    <Grid Background="#FFD0D7F3">
+        <StackPanel Width="500" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Добавление студента" FontFamily="Franklin Gothic Demi" FontSize="50" Foreground="#FF535978" Margin="0,16,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="ErrorLabel" Visibility="Hidden" Content="Студент добавлен" FontSize="20" FontFamily="Franklin Gothic Demi" Foreground="#FFE30F0F" HorizontalAlignment="Center"/>
+            <Label Content="Имя" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF535978" Margin="0,1,0,0"/>
+            <TextBox x:Name="NameTextbox" FontSize="22" Height="auto" Background="White" Cursor="Hand" BorderBrush="#FF535978"/>
+            <Label Content="Фамилия" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF535978" Margin="0,5,0,0"/>
+            <TextBox x:Name="SurnameTextbox" FontSize="22" Height="auto" Background="White" Cursor="Hand" BorderBrush="#FF535978"/>
+            <Label Content="Отчество" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF535978" Margin="0,5,0,0"/>
+            <TextBox x:Name="PatronymicTextbox" FontSize="22" Height="auto" Background="White" Cursor="Hand" BorderBrush="#FF535978"/>
+            <Label Content="Адрес" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF535978" Margin="0,5,0,0"/>
+            <TextBox x:Name="AddressTextbox" FontSize="22" Height="auto" Background="White" Cursor="Hand" BorderBrush="#FF535978"/>
+            <Label Content="Телефон" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF535978" Margin="0,5,0,0"/>
+            <TextBox x:Name="PhoneTextbox" FontSize="22" Height="auto" Background="White" Cursor="Hand" BorderBrush="#FF535978"/>
+            <Button x:Name="AddButton" Content="Добавить" FontFamily="Franklin Gothic Demi" FontSize="36" Foreground="#FF2E3A79" Background="#FFB2C1FF" BorderThickness="4" BorderBrush="#FF2E3A79" Margin="0,20,0,0" Cursor="Hand" Click="AddButton_Click"></Button>
+            <Button x:Name="BackButton" Content="Назад" FontFamily="Franklin Gothic Demi" FontSize="45" Foreground="#FF2E3A79" Background="#FFB2C1FF" BorderThickness="4" BorderBrush="#FF2E3A79" Margin="0,25,0,0" Cursor="Hand" Click="BackButton_Click" Padding="15"/>
+        </StackPanel>
+    </Grid>
+</Page>

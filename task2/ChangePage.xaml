@@ -1,0 +1,23 @@
+﻿<Page x:Class="task2.ChangePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:task2"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1500"
+      Title="ChangePage">
+
+    <Grid Background="#FFD0D7F3">
+        <StackPanel>
+            <Label Content="Выставление оценок" FontFamily="Franklin Gothic Demi" FontSize="60" Foreground="#FF535978" Margin="0,16,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Content="Выберите студента:" FontFamily="Franklin Gothic Demi" FontSize="50" Foreground="#FF535978" Margin="0,16,0,0"/>
+                <ComboBox x:Name="Combobox" VerticalContentAlignment="Center" Width="700" FontSize="40" Height="auto" SelectionChanged="Combobox_SelectionChanged" Margin="30,0,0,0"></ComboBox>
+            </StackPanel>
+            <Frame x:Name="Frame" Height="430" Margin="0,50,0,0"/>
+            <Button x:Name="BackButton" Width="500" Content="Назад" FontFamily="Franklin Gothic Demi" FontSize="45" Foreground="#FF2E3A79" Background="#FFB2C1FF" BorderThickness="4" BorderBrush="#FF2E3A79" Cursor="Hand" Click="BackButton_Click" Padding="15"/>
+        </StackPanel>
+    </Grid>
+</Page>
+    
